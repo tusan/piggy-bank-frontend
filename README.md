@@ -1,3 +1,8 @@
+This is a personal experiment used to learn react framework and responsive web apps technologies.
+This is my first project entirely in frontend , so feel free to suggest me further improving and other ways to do it better :)
+
+# React stuff
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
