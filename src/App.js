@@ -4,6 +4,7 @@ import MediaQuery from 'react-responsive';
 import 'antd/dist/antd.css';
 import MobileApp from './layout/mobile/MobileApp';
 import DesktopApp from './layout/desktop/DesktopApp';
+import axios from 'axios';
 
 class App extends PureComponent {
   render = () => (

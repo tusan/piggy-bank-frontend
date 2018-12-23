@@ -15,7 +15,7 @@ export default class DesktopApp extends React.PureComponent {
         <Header className="App-header">PiggyBank</Header>
       </Layout>
       <Layout>
-        <Content class="App-content">
+        <Content className="App-content">
           <Row type="flex">
             <Col xs={15}>
               <ExpensesTableContainer data={this.props.data} />
