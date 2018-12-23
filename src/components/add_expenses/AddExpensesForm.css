@@ -14,6 +14,19 @@
   width: 100%;
 }
 
-.button.ant-btn.ant-btn-primary {
+.add-expense-form .ant-btn-primary {
   width: 100%;
+  height: 50px;
+}
+
+@media screen and (min-width: 1224px) {
+  .add-expense-form {
+    border: 1px solid;
+    border-color: #e8e8e8;
+    margin-top: 20px;
+  }
+
+  .add-expense-form h3 {
+    color: rgba(0, 0, 0, 0.65);
+  }
 }

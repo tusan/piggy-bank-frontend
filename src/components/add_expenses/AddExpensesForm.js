@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Form, DatePicker, Input, Button, Select } from 'antd';
+import { Form, DatePicker, Input, Button, Select, Layout } from 'antd';
 import './AddExpensesForm.css';
 const { Item } = Form;
 const { Option } = Select;
@@ -8,14 +8,10 @@ const { TextArea } = Input;
 export default class AddExpenseForm extends PureComponent {
   render = () => (
     <div className="add-expense-form">
+      <h3 className="form-title">Add New</h3>
       <Form layout="vertical" className="expenses-form">
         <Item>
-          <DatePicker
-            format={'DD/MM/YYYY'}
-            style={{
-              float: 'left'
-            }}
-          />
+          <DatePicker className="expense-date-picker" format={'DD/MM/YYYY'} />
         </Item>
         <Item>
           <Select

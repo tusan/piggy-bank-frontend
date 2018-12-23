@@ -24,7 +24,7 @@ const fakeData = [
   {
     key: 0,
     date: new Date('2018-11-29'),
-    amount: 1711,
+    amount: 9999,
     type: 'STIPENDIO',
     description: 'Dicembre'
   },
