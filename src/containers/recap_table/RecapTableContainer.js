@@ -1,5 +1,6 @@
 import React from 'react';
 import RecapTable from '../../components/recap_table/RecapTable';
+import { connect } from 'react-redux';
 
 export const onlyExpenses = data => data.amount < 0;
 export const toTypeAmountOnly = data => ({
@@ -22,6 +23,10 @@ export const computeTotalAmount = data => {
   return data.reduce((curr, prev) => curr + prev.amount, 0);
 };
 
+const mapStateToProps = state => ({
+  data: state
+});
+
 class RecapTableContainer extends React.PureComponent {
   render = () => {
     const filteredData = this.props.data
@@ -40,4 +45,4 @@ class RecapTableContainer extends React.PureComponent {
   };
 }
 
-export default RecapTableContainer;
+export default connect(mapStateToProps)(RecapTableContainer);

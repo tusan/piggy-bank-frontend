@@ -18,13 +18,11 @@ export default class DesktopApp extends React.PureComponent {
         <Content className="App-content">
           <Row type="flex">
             <Col xs={15}>
-              <ExpensesTableContainer data={this.props.data} />
+              <ExpensesTableContainer />
             </Col>
             <Col xs={8} offset={1}>
-              <RecapTableContainer data={this.props.data} />
-              <AddExpenseFormContainer
-                updateExpenses={this.props.updateExpenses}
-              />
+              <RecapTableContainer />
+              <AddExpenseFormContainer />
             </Col>
           </Row>
         </Content>

@@ -38,7 +38,6 @@ class AddExpenseForm extends PureComponent {
               <DatePicker
                 className="expense-date-picker"
                 format={'DD/MM/YYYY'}
-                onChange={this.props.handleValueChange}
               />
             )}
           </Item>
@@ -55,7 +54,6 @@ class AddExpenseForm extends PureComponent {
                 showSearch
                 optionFilterProp="children"
                 placeholder="Select type"
-                onChange={this.props.handleValueChange}
               >
                 <Option value="MOTO">Moto</Option>
                 <Option value="CASA">Casa</Option>
@@ -71,20 +69,11 @@ class AddExpenseForm extends PureComponent {
                   message: 'Please insert a valid amount'
                 }
               ]
-            })(
-              <Input
-                onChange={this.props.handleValueChange}
-                placeholder={'Insert amount: €'}
-                type={'number'}
-              />
-            )}
+            })(<Input placeholder={'Insert amount: €'} type={'number'} />)}
           </Item>
           <Item>
             {getFieldDecorator('descritpion', {})(
-              <TextArea
-                onChange={this.props.handleValueChange}
-                placeholder={'Insert short description'}
-              />
+              <TextArea placeholder={'Insert short description'} />
             )}
           </Item>
           <Item>

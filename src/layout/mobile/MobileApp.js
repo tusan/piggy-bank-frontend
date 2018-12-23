@@ -37,23 +37,9 @@ export default class MobileApp extends React.PureComponent {
           </Sider>
           <Layout>
             <Content className="App-content">
-              <Route
-                path="/"
-                exact
-                render={() => <ExpensesTableContainer data={this.props.data} />}
-              />
-              <Route
-                path="/recap/"
-                render={() => <RecapTableContainer data={this.props.data} />}
-              />
-              <Route
-                path="/add/"
-                render={() => (
-                  <AddExpenseFormContainer
-                    updateExpenses={this.props.updateExpenses}
-                  />
-                )}
-              />
+              <Route path="/" exact render={() => <ExpensesTableContainer />} />
+              <Route path="/recap/" render={() => <RecapTableContainer />} />
+              <Route path="/add/" render={() => <AddExpenseFormContainer />} />
             </Content>
           </Layout>
         </Layout>
