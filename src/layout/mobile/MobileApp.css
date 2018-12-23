@@ -1,0 +1,16 @@
+.App-header.ant-layout-header {
+  padding: 0px;
+}
+
+.ant-row-flex.ant-row-flex-start {
+  width: 100%;
+}
+
+.ant-layout-sider.ant-layout-sider-light.ant-layout-sider-has-trigger {
+  text-align: left;
+}
+
+
+ul.ant-menu.ant-menu-light.ant-menu-inline-collapsed.ant-menu-root.ant-menu-vertical {
+  border: none;
+}

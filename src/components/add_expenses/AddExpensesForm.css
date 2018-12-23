@@ -1,0 +1,19 @@
+.expenses-form {
+  padding: 10px;
+}
+
+.ant-form-vertical .ant-form-item {
+  padding: 0px;
+}
+
+.ant-form-item {
+  margin-bottom: 10px;
+}
+
+.ant-calendar-picker {
+  width: 100%;
+}
+
+.button.ant-btn.ant-btn-primary {
+  width: 100%;
+}
