@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 import { Layout, Row, Col } from 'antd';
 import ExpensesTableContainer from './../../containers/expenses_table/ExpensesTableContainer';
 import RecapTableContainer from './../../containers/recap_table/RecapTableContainer';
-import AddExpenseForm from './../../components/add_expenses/AddExpensesForm';
+import AddExpenseFormContainer from './../../containers/add_expenses/AddExpenseFormContainer';
 
 const { Header, Content } = Layout;
 
@@ -22,7 +22,9 @@ export default class DesktopApp extends React.PureComponent {
             </Col>
             <Col xs={8} offset={1}>
               <RecapTableContainer data={this.props.data} />
-              <AddExpenseForm />
+              <AddExpenseFormContainer
+                updateExpenses={this.props.updateExpenses}
+              />
             </Col>
           </Row>
         </Content>

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Form, DatePicker, Input, Button, Select } from 'antd';
-import './AddExpensesForm.css';
+import './AddExpenseForm.css';
 const { Item } = Form;
 const { Option } = Select;
 const { TextArea } = Input;
@@ -8,20 +8,16 @@ const { TextArea } = Input;
 class AddExpenseForm extends PureComponent {
   handleSubmit = e => {
     e.preventDefault();
+
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
+        this.props.handleSubmitSuccess(values);
       }
     });
   };
 
-  handleValueChange = e => {
-    console.log(e);
-  };
-
   render = () => {
     const { getFieldDecorator } = this.props.form;
-
     return (
       <div className="add-expense-form">
         <h3 className="form-title">Add New</h3>
@@ -42,7 +38,7 @@ class AddExpenseForm extends PureComponent {
               <DatePicker
                 className="expense-date-picker"
                 format={'DD/MM/YYYY'}
-                onChange={this.handleValueChange}
+                onChange={this.props.handleValueChange}
               />
             )}
           </Item>
@@ -59,7 +55,7 @@ class AddExpenseForm extends PureComponent {
                 showSearch
                 optionFilterProp="children"
                 placeholder="Select type"
-                onChange={this.handleSelectChange}
+                onChange={this.props.handleValueChange}
               >
                 <Option value="MOTO">Moto</Option>
                 <Option value="CASA">Casa</Option>
@@ -77,7 +73,7 @@ class AddExpenseForm extends PureComponent {
               ]
             })(
               <Input
-                onChange={this.handleSelectChange}
+                onChange={this.props.handleValueChange}
                 placeholder={'Insert amount: €'}
                 type={'number'}
               />
@@ -86,7 +82,7 @@ class AddExpenseForm extends PureComponent {
           <Item>
             {getFieldDecorator('descritpion', {})(
               <TextArea
-                onChange={this.handleSelectChange}
+                onChange={this.props.handleValueChange}
                 placeholder={'Insert short description'}
               />
             )}

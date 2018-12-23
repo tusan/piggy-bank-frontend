@@ -4,8 +4,8 @@ import 'antd/dist/antd.css';
 import { Layout, Menu, Icon } from 'antd';
 import ExpensesTableContainer from './../../containers/expenses_table/ExpensesTableContainer';
 import RecapTableContainer from './../../containers/recap_table/RecapTableContainer';
-import AddExpenseForm from './../../components/add_expenses/AddExpensesForm';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import AddExpenseFormContainer from '../../containers/add_expenses/AddExpenseFormContainer';
 
 const { Header, Content, Sider } = Layout;
 const { Item } = Menu;
@@ -46,7 +46,14 @@ export default class MobileApp extends React.PureComponent {
                 path="/recap/"
                 render={() => <RecapTableContainer data={this.props.data} />}
               />
-              <Route path="/add/" render={() => <AddExpenseForm />} />
+              <Route
+                path="/add/"
+                render={() => (
+                  <AddExpenseFormContainer
+                    updateExpenses={this.props.updateExpenses}
+                  />
+                )}
+              />
             </Content>
           </Layout>
         </Layout>
