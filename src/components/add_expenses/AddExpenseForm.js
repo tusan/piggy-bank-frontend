@@ -11,7 +11,7 @@ class AddExpenseForm extends PureComponent {
 
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        this.props.handleSubmitSuccess(values);
+        this.props.onSubmitSuccess(values);
       }
     });
   };

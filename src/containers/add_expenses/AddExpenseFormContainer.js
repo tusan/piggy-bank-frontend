@@ -2,18 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import AddExpenseForm from '../../components/add_expenses/AddExpenseForm';
 import { addExpense } from '../../actions/actions';
-class AddExpenseFormContainer extends React.PureComponent {
-  handleSubmitSuccess = value => {
-    this.props.onAddExpense(value);
-  };
 
+class AddExpenseFormContainer extends React.PureComponent {
   render = () => {
-    return (
-      <AddExpenseForm
-        handleSubmitSuccess={this.handleSubmitSuccess}
-        handleValueChange={this.handleValueChange}
-      />
-    );
+    return <AddExpenseForm onSubmitSuccess={this.props.onSubmitSuccess} />;
   };
 }
 
@@ -23,7 +15,7 @@ const mapStateToProp = state => ({
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAddExpense: value => {
+    onSubmitSuccess: value => {
       dispatch(addExpense(value));
     }
   };
