@@ -47,10 +47,11 @@ const ExpensesTable = props => (
         onClick: () => handleClick(record)
       };
     }}
+    scroll={{ y: 700 }}
     pagination={{
       simple: true,
-      pageSize: 50,
-      defaultPageSize: 50,
+      pageSize: 80,
+      defaultPageSize: 80,
       hideOnSinglePage: true
     }}
     size="small"
