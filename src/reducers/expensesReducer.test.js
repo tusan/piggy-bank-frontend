@@ -1,4 +1,6 @@
 import { actionTypes } from '../actions/actions';
+import { expenses } from './expensesReducer';
+import moment from 'moment';
 
 describe('expenses reducer', () => {
   it('should handle EXPENSES_ADDED', () => {
@@ -11,22 +13,29 @@ describe('expenses reducer', () => {
   });
 
   it('should handle EXPENSE_LOAD_SUCCESS', () => {
-    const result = expenses([], {
+    const expected = [
+      {
+        type: 'MOTO',
+        date: moment('20181226'),
+        amount: 0,
+        key: 0
+      },
+      {
+        type: 'MOTO',
+        date: moment('20181226'),
+        amount: 1,
+        key: 1
+      }
+    ];
+
+    const actual = expenses([], {
       type: actionTypes.EXPENSE_LOAD_SUCCESS,
-      data: [{ amount: 0 }, { amount: 1 }]
+      data: [
+        { type: 'MOTO', date: '20181226', amount: 0 },
+        { type: 'MOTO', date: '20181226', amount: 1 }
+      ]
     });
 
-    expect(result).toEqual([{ amount: 0 }, { amount: 1 }]);
+    expect(actual).toEqual(expected);
   });
 });
-
-export const expenses = (state = [], action) => {
-  switch (action.type) {
-    case actionTypes.EXPENSE_ADDED:
-      return [...state, { ...action.expense, key: state.length }];
-    case actionTypes.EXPENSE_LOAD_SUCCESS:
-      return action.data;
-    default:
-      return state;
-  }
-};

@@ -42,8 +42,8 @@ export const buildRecapFromData = data => {
 
 const mapStateToProps = state => buildRecapFromData(state);
 
-export const RecapTableContainer = () => (
-  <RecapTable data={this.props.data} totalAmount={this.props.totalAmount} />
+export const RecapTableContainer = props => (
+  <RecapTable data={props.data} totalAmount={props.totalAmount} />
 );
 
 export default connect(mapStateToProps)(RecapTableContainer);

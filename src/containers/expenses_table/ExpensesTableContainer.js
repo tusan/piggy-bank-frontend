@@ -11,7 +11,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
-      onContainerMounted: (_, getState) => loadExpenses
+      onContainerMounted: loadExpenses
     },
     dispatch
   );

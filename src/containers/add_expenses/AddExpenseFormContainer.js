@@ -18,8 +18,8 @@ const mapDispatchToProps = dispatch =>
     dispatch
   );
 
-const AddExpenseFormContainer = () => (
-  <AddExpenseForm onSubmitSuccess={this.props.onSubmitSuccess} />
+const AddExpenseFormContainer = props => (
+  <AddExpenseForm onSubmitSuccess={props.onSubmitSuccess} />
 );
 
 export default connect(
