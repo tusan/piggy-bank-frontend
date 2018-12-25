@@ -1,18 +1,10 @@
-import RecapTableContainer, {
+import {
   onlyExpenses,
   aggregateByType,
   toList,
-  computeTotalAmount
+  computeTotalAmount,
+  buildRecapFromData
 } from './RecapTableContainer';
-
-import RecapTable from '../../components/recap_table/RecapTable';
-import { mount, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import React from 'react';
-
-beforeEach(() => {
-  configure({ adapter: new Adapter() });
-});
 
 it('should filter only positive values', () => {
   const fakeData = [
@@ -113,7 +105,7 @@ it('should comput total amount', () => {
   expect(-60).toEqual(computeTotalAmount(fakeData));
 });
 
-it('should create RecapTable with filtered values', () => {
+it('should aggregate with filtered values', () => {
   const fakeData = [
     {
       key: 0,
@@ -152,11 +144,8 @@ it('should create RecapTable with filtered values', () => {
     }
   ];
 
-  const wrapper = mount(<RecapTableContainer data={fakeData} />);
-  const innerProps = wrapper.find(RecapTable);
-
-  expect(innerProps.props().data).toEqual(
-    expect.arrayContaining([
+  const expectedData = {
+    data: [
       {
         key: 0,
         type: 'EXP1',
@@ -167,8 +156,9 @@ it('should create RecapTable with filtered values', () => {
         type: 'EXP2',
         amount: -40
       }
-    ])
-  );
+    ],
+    totalAmount: -60
+  };
 
-  expect(innerProps.props().totalAmount).toEqual(-60);
+  expect(buildRecapFromData(fakeData)).toEqual(expectedData);
 });

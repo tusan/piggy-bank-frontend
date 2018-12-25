@@ -5,13 +5,8 @@ import 'antd/dist/antd.css';
 import MobileApp from './layout/mobile/MobileApp';
 import DesktopApp from './layout/desktop/DesktopApp';
 import { connect } from 'react-redux';
-import { loadExpenses } from './services/ExpensesService';
 
-class App extends PureComponent {
-  componentDidMount = () => {
-    this.props.dispatch(loadExpenses());
-  };
-
+export class App extends PureComponent {
   render = () => (
     <div>
       <MediaQuery minDeviceWidth={1224}>
