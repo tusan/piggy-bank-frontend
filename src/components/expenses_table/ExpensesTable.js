@@ -1,8 +1,6 @@
 import React from 'react';
 import { Table } from 'antd';
 
-import './ExpensesTable.css';
-
 const baseSorter = (a, b) => (a > b ? 1 : -1);
 
 const columns = [
@@ -10,18 +8,20 @@ const columns = [
     title: 'Date',
     dataIndex: 'date',
     sorter: baseSorter,
-    width: 120,
+    width: 220,
     render: row => <span>{Intl.DateTimeFormat().format(row)}</span>
   },
   {
     title: 'Amount',
     dataIndex: 'amount',
+    width: 220,
     render: row => <span>€ {row}</span>,
     sorter: baseSorter
   },
   {
     title: 'Type',
-    dataIndex: 'type'
+    dataIndex: 'type',
+    sorter: baseSorter
   }
 ];
 

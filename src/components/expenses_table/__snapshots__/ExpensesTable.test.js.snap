@@ -33,16 +33,16 @@ exports[`<ExpensesTable /> should render with no items 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": 120,
-                        "width": 120,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
@@ -164,10 +164,52 @@ exports[`<ExpensesTable /> should render with no items 1`] = `
                       </div>
                     </th>
                     <th
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
                     >
-                      <div>
+                      <div
+                        className="ant-table-column-sorters"
+                        title="Type"
+                      >
                         Type
+                        <div
+                          className="ant-table-column-sorter"
+                        >
+                          <i
+                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-up"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                          <i
+                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-down"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
                       </div>
                     </th>
                   </tr>
@@ -193,16 +235,16 @@ exports[`<ExpensesTable /> should render with no items 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": 120,
-                        "width": 120,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
@@ -266,16 +308,16 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": 120,
-                        "width": 120,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
@@ -397,10 +439,52 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                       </div>
                     </th>
                     <th
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
                     >
-                      <div>
+                      <div
+                        className="ant-table-column-sorters"
+                        title="Type"
+                      >
                         Type
+                        <div
+                          className="ant-table-column-sorter"
+                        >
+                          <i
+                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-up"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                          <i
+                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-down"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
                       </div>
                     </th>
                   </tr>
@@ -426,16 +510,16 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": 120,
-                        "width": 120,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
@@ -491,7 +575,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                       </span>
                     </td>
                     <td
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
                       onClick={[Function]}
                     >
                       MOTO
@@ -541,16 +625,16 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": 120,
-                        "width": 120,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
@@ -672,10 +756,52 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                       </div>
                     </th>
                     <th
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
                     >
-                      <div>
+                      <div
+                        className="ant-table-column-sorters"
+                        title="Type"
+                      >
                         Type
+                        <div
+                          className="ant-table-column-sorter"
+                        >
+                          <i
+                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-up"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                          <i
+                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-down"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
                       </div>
                     </th>
                   </tr>
@@ -701,16 +827,16 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": 120,
-                        "width": 120,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 220,
+                        "width": 220,
                       }
                     }
                   />
@@ -766,7 +892,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                       </span>
                     </td>
                     <td
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
                       onClick={[Function]}
                     >
                       CASA
@@ -812,7 +938,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                       </span>
                     </td>
                     <td
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
                       onClick={[Function]}
                     >
                       CASA
@@ -858,7 +984,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                       </span>
                     </td>
                     <td
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
                       onClick={[Function]}
                     >
                       CASA
@@ -904,7 +1030,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                       </span>
                     </td>
                     <td
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
                       onClick={[Function]}
                     >
                       CASA
@@ -950,7 +1076,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                       </span>
                     </td>
                     <td
-                      className=""
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
                       onClick={[Function]}
                     >
                       CASA
