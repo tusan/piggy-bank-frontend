@@ -66,7 +66,7 @@ exports[`<ExpensesTable /> should render with no items 1`] = `
                     }
                   >
                     <th
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <div
@@ -78,7 +78,7 @@ exports[`<ExpensesTable /> should render with no items 1`] = `
                           className="ant-table-column-sorter"
                         >
                           <i
-                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                            className="anticon anticon-caret-up ant-table-column-sorter-up on"
                           >
                             <svg
                               aria-hidden="true"
@@ -222,7 +222,7 @@ exports[`<ExpensesTable /> should render with no items 1`] = `
               onWheel={[Function]}
               style={
                 Object {
-                  "maxHeight": 700,
+                  "maxHeight": 420,
                   "overflowY": "scroll",
                 }
               }
@@ -341,7 +341,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                     }
                   >
                     <th
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <div
@@ -353,7 +353,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                           className="ant-table-column-sorter"
                         >
                           <i
-                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                            className="anticon anticon-caret-up ant-table-column-sorter-up on"
                           >
                             <svg
                               aria-hidden="true"
@@ -497,7 +497,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
               onWheel={[Function]}
               style={
                 Object {
-                  "maxHeight": 700,
+                  "maxHeight": 420,
                   "overflowY": "scroll",
                 }
               }
@@ -550,7 +550,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                     }
                   >
                     <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <span
@@ -658,7 +658,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                     }
                   >
                     <th
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <div
@@ -670,7 +670,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                           className="ant-table-column-sorter"
                         >
                           <i
-                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                            className="anticon anticon-caret-up ant-table-column-sorter-up on"
                           >
                             <svg
                               aria-hidden="true"
@@ -814,7 +814,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
               onWheel={[Function]}
               style={
                 Object {
-                  "maxHeight": 700,
+                  "maxHeight": 420,
                   "overflowY": "scroll",
                 }
               }
@@ -867,7 +867,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                     }
                   >
                     <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <span
@@ -913,7 +913,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                     }
                   >
                     <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <span
@@ -959,7 +959,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                     }
                   >
                     <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <span
@@ -1005,7 +1005,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                     }
                   >
                     <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <span
@@ -1051,7 +1051,7 @@ exports[`<ExpensesTable /> should rendere with more items 1`] = `
                     }
                   >
                     <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                       onClick={[Function]}
                     >
                       <span

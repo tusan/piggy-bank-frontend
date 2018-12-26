@@ -129,7 +129,7 @@ exports[`<RecapTable /> should display a RecapTable with a single element 1`] = 
                 </b>
               </div>
               <div
-                className="ant-col-offset-8"
+                className="ant-col-offset-10"
               >
                 <span
                   className="totalAmount"
@@ -428,7 +428,7 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                 </b>
               </div>
               <div
-                className="ant-col-offset-8"
+                className="ant-col-offset-10"
               >
                 <span
                   className="totalAmount"
@@ -541,7 +541,7 @@ exports[`<RecapTable /> should display a RecapTable without elements 1`] = `
                 </b>
               </div>
               <div
-                className="ant-col-offset-8"
+                className="ant-col-offset-10"
               >
                 <span
                   className="totalAmount"

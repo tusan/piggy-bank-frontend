@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table } from 'antd';
+import './ExpensesTable.css';
 
 const baseSorter = (a, b) => (a > b ? 1 : -1);
 
@@ -7,6 +8,7 @@ const columns = [
   {
     title: 'Date',
     dataIndex: 'date',
+    defaultSortOrder: 'ascend',
     sorter: baseSorter,
     width: 220,
     render: row => <span>{Intl.DateTimeFormat().format(row)}</span>
@@ -32,7 +34,7 @@ const ExpensesTable = props => (
     onRow={record => ({
       onClick: () => props.handleRowClick(record)
     })}
-    scroll={{ y: 700 }}
+    scroll={{ y: 420 }}
     pagination={{
       simple: true,
       pageSize: 80,

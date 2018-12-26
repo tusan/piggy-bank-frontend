@@ -30,7 +30,7 @@ const RecapTable = props => (
         <Col>
           <b>Total: </b>
         </Col>
-        <Col offset={8}>
+        <Col offset={10}>
           <span className="totalAmount">€ {props.totalAmount.toFixed(2)}</span>
         </Col>
       </Row>

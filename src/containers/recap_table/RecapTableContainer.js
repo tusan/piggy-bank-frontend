@@ -40,7 +40,7 @@ export const buildRecapFromData = data => {
   };
 };
 
-const mapStateToProps = state => buildRecapFromData(state);
+const mapStateToProps = state => buildRecapFromData(state.expenses);
 
 export const RecapTableContainer = props => (
   <RecapTable data={props.data} totalAmount={props.totalAmount} />

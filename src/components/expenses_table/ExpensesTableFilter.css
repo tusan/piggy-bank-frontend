@@ -1,0 +1,28 @@
+.expenses-filter button.ant-btn.ant-btn-primary,
+.expenses-filter .ant-row.ant-form-item,
+.expenses-filter .ant-form-item-control-wrapper {
+  width: 100%;
+}
+
+.expenses-filter form.ant-form.ant-form-inline {
+  text-align: left;
+}
+
+.expenses-filter {
+  border: 1px solid;
+  border-color: #e8e8e8;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .expenses-filter button.ant-btn.ant-btn-primary,
+  .expenses-filter .ant-row.ant-form-item {
+    width: auto;
+  }
+
+  .expenses-filter .ant-row.ant-form-item {
+    width: 30%;
+  }
+}

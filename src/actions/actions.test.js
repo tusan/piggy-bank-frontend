@@ -3,6 +3,8 @@ import thunk from 'redux-thunk';
 import * as actions from './actions';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
+import moment from 'moment';
+import { fail, doesNotReject } from 'assert';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -22,16 +24,25 @@ describe('expense actions', () => {
     const store = mockStore([]);
 
     axiosMock
-      .onGet('http://localhost:8080/api/v1/expenses')
+      .onGet('http://localhost:8080/api/v1/expenses', {
+        params: {
+          'date-start': '20181126',
+          'date-end': '20181226'
+        }
+      })
       .reply(200, [{ amount: 0 }]);
 
-    const expected = {
-      type: 'EXPENSE_LOAD_SUCCESS',
-      data: [{ amount: 0 }]
-    };
+    const expected = [
+      {
+        type: 'EXPENSE_LOAD_SUCCESS',
+        data: [{ amount: 0 }]
+      }
+    ];
 
-    store
-      .dispatch(actions.loadExpenses())
-      .then(res => expect(store.getActions()).toEqual([expected]));
+    return store
+      .dispatch(actions.loadExpenses(moment('20181126'), moment('20181226')))
+      .then(() => {
+        expect(store.getActions()).toEqual(expected);
+      });
   });
 });

@@ -2,7 +2,6 @@ import axios from 'axios';
 
 export const actionTypes = {
   EXPENSE_ADDED: 'EXPENSE_ADDED',
-  APPLICATION_STARTED: 'APPLICATION_STARTED',
   EXPENSE_LOAD_SUCCESS: 'EXPENSE_LOAD_SUCCESS'
 };
 
@@ -16,10 +15,14 @@ export const expenseLoadSuccess = data => ({
   data
 });
 
-export const loadExpenses = () => dispatch => {
-  return axios
-    .get('http://localhost:8080/api/v1/expenses')
+export const loadExpenses = (dateStart, dateEnd) => dispatch =>
+  axios
+    .get(`http://localhost:8080/api/v1/expenses`, {
+      params: {
+        'date-start': dateStart.format('YYYYMMDD'),
+        'date-end': dateEnd.format('YYYYMMDD')
+      }
+    })
     .then(res => res.data)
     .then(res => dispatch(expenseLoadSuccess(res)))
     .catch(res => console.error(res));
-};

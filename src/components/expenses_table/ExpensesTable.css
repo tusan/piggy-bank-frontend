@@ -1,0 +1,11 @@
+.ant-table.ant-table-small.ant-table-fixed-header.ant-table-scroll-position-left,
+.ant-table.ant-table-small.ant-table-empty.ant-table-fixed-header.ant-table-scroll-position-left {
+  min-height: 300px;
+}
+
+@media screen and (min-width: 1220px) {
+  .ant-table.ant-table-small.ant-table-fixed-header.ant-table-scroll-position-left,
+  .ant-table.ant-table-small.ant-table-empty.ant-table-fixed-header.ant-table-scroll-position-left {
+    min-height: 420px;
+  }
+}
