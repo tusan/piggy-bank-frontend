@@ -10,34 +10,34 @@ it('should filter only positive values', () => {
   const fakeData = [
     {
       key: 0,
-      amount: 1711,
-      type: 'STIPENDIO'
+      amount: 9999,
+      type: 'EXP0'
     },
     {
       key: 1,
       amount: -229.87,
-      type: 'VESTITI'
+      type: 'EXP1'
     },
     {
       key: 2,
       amount: -600,
-      type: 'CASA'
+      type: 'EXP2'
     },
     {
       key: 3,
-      amount: 2000,
-      type: 'STIPENDIO'
+      amount: 9999,
+      type: 'EXP0'
     },
     {
       key: 4,
       amount: 16.45,
-      type: 'MOTO'
+      type: 'EXP3'
     }
   ];
 
   expect(fakeData.filter(onlyExpenses)).toEqual([
-    { amount: -229.87, key: 1, type: 'VESTITI' },
-    { amount: -600, key: 2, type: 'CASA' }
+    { amount: -229.87, key: 1, type: 'EXP1' },
+    { amount: -600, key: 2, type: 'EXP2' }
   ]);
 });
 it('should aggregate by type and sum all prices', () => {

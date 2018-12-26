@@ -1,0 +1,560 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecapTable /> should display a RecapTable with a single element 1`] = `
+<div
+  className="ant-table-wrapper"
+>
+  <div
+    className="ant-spin-nested-loading"
+  >
+    <div
+      className="ant-spin-container"
+    >
+      <div
+        className="ant-table ant-table-small ant-table-scroll-position-left"
+        style={Object {}}
+      >
+        <div
+          className="ant-table-content"
+        >
+          <div
+            className="ant-table-body"
+            onScroll={[Function]}
+            onWheel={[Function]}
+            style={Object {}}
+          >
+            <table
+              className=""
+              style={Object {}}
+            >
+              <colgroup>
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </colgroup>
+              <thead
+                className="ant-table-thead"
+              >
+                <tr
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <th
+                    className=""
+                  >
+                    <div>
+                      Type
+                    </div>
+                  </th>
+                  <th
+                    className=""
+                  >
+                    <div>
+                      Amount
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                className="ant-table-tbody"
+              >
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    MOTO
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span>
+                      € 
+                      -100
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            className="ant-table-footer"
+          >
+            <div
+              className="ant-row-flex"
+            >
+              <div
+                className=""
+              >
+                <b>
+                  Total: 
+                </b>
+              </div>
+              <div
+                className="ant-col-offset-8"
+              >
+                <span
+                  className="totalAmount"
+                >
+                  € 
+                  -100.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
+<div
+  className="ant-table-wrapper"
+>
+  <div
+    className="ant-spin-nested-loading"
+  >
+    <div
+      className="ant-spin-container"
+    >
+      <div
+        className="ant-table ant-table-small ant-table-scroll-position-left"
+        style={Object {}}
+      >
+        <div
+          className="ant-table-content"
+        >
+          <div
+            className="ant-table-body"
+            onScroll={[Function]}
+            onWheel={[Function]}
+            style={Object {}}
+          >
+            <table
+              className=""
+              style={Object {}}
+            >
+              <colgroup>
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </colgroup>
+              <thead
+                className="ant-table-thead"
+              >
+                <tr
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <th
+                    className=""
+                  >
+                    <div>
+                      Type
+                    </div>
+                  </th>
+                  <th
+                    className=""
+                  >
+                    <div>
+                      Amount
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                className="ant-table-tbody"
+              >
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={0}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    MOTO
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span>
+                      € 
+                      -100
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={1}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    MOTO
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span>
+                      € 
+                      -100
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={2}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    MOTO
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span>
+                      € 
+                      -100
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={3}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    MOTO
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span>
+                      € 
+                      -100
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={4}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    MOTO
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span>
+                      € 
+                      -100
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            className="ant-table-footer"
+          >
+            <div
+              className="ant-row-flex"
+            >
+              <div
+                className=""
+              >
+                <b>
+                  Total: 
+                </b>
+              </div>
+              <div
+                className="ant-col-offset-8"
+              >
+                <span
+                  className="totalAmount"
+                >
+                  € 
+                  -100.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<RecapTable /> should display a RecapTable without elements 1`] = `
+<div
+  className="ant-table-wrapper"
+>
+  <div
+    className="ant-spin-nested-loading"
+  >
+    <div
+      className="ant-spin-container"
+    >
+      <div
+        className="ant-table ant-table-small ant-table-empty ant-table-scroll-position-left"
+        style={Object {}}
+      >
+        <div
+          className="ant-table-content"
+        >
+          <div
+            className="ant-table-body"
+            onScroll={[Function]}
+            onWheel={[Function]}
+            style={Object {}}
+          >
+            <table
+              className=""
+              style={Object {}}
+            >
+              <colgroup>
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </colgroup>
+              <thead
+                className="ant-table-thead"
+              >
+                <tr
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <th
+                    className=""
+                  >
+                    <div>
+                      Type
+                    </div>
+                  </th>
+                  <th
+                    className=""
+                  >
+                    <div>
+                      Amount
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                className="ant-table-tbody"
+              />
+            </table>
+          </div>
+          <div
+            className="ant-table-placeholder"
+          >
+            No data
+          </div>
+          <div
+            className="ant-table-footer"
+          >
+            <div
+              className="ant-row-flex"
+            >
+              <div
+                className=""
+              >
+                <b>
+                  Total: 
+                </b>
+              </div>
+              <div
+                className="ant-col-offset-8"
+              >
+                <span
+                  className="totalAmount"
+                >
+                  € 
+                  0.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ExpenseDetails /> should display an ExpenseDetails table 1`] = `
+<div
+  className="ant-table-wrapper"
+>
+  <div
+    className="ant-spin-nested-loading"
+  >
+    <div
+      className="ant-spin-container"
+    >
+      <div
+        className="ant-table ant-table-small ant-table-without-column-header ant-table-scroll-position-left"
+        style={Object {}}
+      >
+        <div
+          className="ant-table-content"
+        >
+          <div
+            className="ant-table-body"
+            onScroll={[Function]}
+            onWheel={[Function]}
+            style={Object {}}
+          >
+            <table
+              className=""
+              style={Object {}}
+            >
+              <colgroup>
+                <col
+                  style={
+                    Object {
+                      "minWidth": "120px",
+                      "width": "120px",
+                    }
+                  }
+                />
+                <col
+                  style={
+                    Object {
+                      "minWidth": undefined,
+                      "width": undefined,
+                    }
+                  }
+                />
+              </colgroup>
+              <tbody
+                className="ant-table-tbody"
+              >
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={1}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    <b>
+                      Date
+                    </b>
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    2018-12-26
+                  </td>
+                </tr>
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={2}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    <b>
+                      Amount
+                    </b>
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    €-100
+                  </td>
+                </tr>
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={3}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    <b>
+                      Type
+                    </b>
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    MOTO
+                  </td>
+                </tr>
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={4}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onDoubleClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "height": null,
+                    }
+                  }
+                >
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    <span
+                      className="ant-table-row-indent indent-level-0"
+                      style={
+                        Object {
+                          "paddingLeft": "0px",
+                        }
+                      }
+                    />
+                    <b>
+                      Description
+                    </b>
+                  </td>
+                  <td
+                    className=""
+                    onClick={[Function]}
+                  >
+                    a description
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

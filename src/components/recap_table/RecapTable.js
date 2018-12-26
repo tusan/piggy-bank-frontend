@@ -31,9 +31,7 @@ const RecapTable = props => (
           <b>Total: </b>
         </Col>
         <Col offset={8}>
-          <span style={{ marginLeft: 6 }}>
-            € {props.totalAmount.toFixed(2)}
-          </span>
+          <span className="totalAmount">€ {props.totalAmount.toFixed(2)}</span>
         </Col>
       </Row>
     )}

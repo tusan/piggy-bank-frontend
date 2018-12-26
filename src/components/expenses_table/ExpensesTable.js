@@ -1,8 +1,6 @@
 import React from 'react';
 import { Table } from 'antd';
 
-import { Modal } from 'antd';
-import ExpenseDetails from '../expense_details/ExpenseDetails';
 import './ExpensesTable.css';
 
 const baseSorter = (a, b) => (a > b ? 1 : -1);
@@ -27,26 +25,13 @@ const columns = [
   }
 ];
 
-const handleClick = rowInfo =>
-  Modal.confirm({
-    title: 'Details',
-    content: <ExpenseDetails item={rowInfo} />,
-    iconType: 'zoom-in',
-    maskClosable: true,
-    cancelButtonProps: {
-      style: { display: 'none' }
-    }
-  });
-
 const ExpensesTable = props => (
   <Table
     dataSource={props.data}
     columns={columns}
-    onRow={record => {
-      return {
-        onClick: () => handleClick(record)
-      };
-    }}
+    onRow={record => ({
+      onClick: () => props.handleRowClick(record)
+    })}
     scroll={{ y: 700 }}
     pagination={{
       simple: true,

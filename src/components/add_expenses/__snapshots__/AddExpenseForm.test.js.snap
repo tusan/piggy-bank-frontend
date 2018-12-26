@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddExpenseForm /> should display an AddExpenseForm 1`] = `
+<div
+  className="add-expense-form"
+>
+  <h3
+    className="form-title"
+  >
+    Add New
+  </h3>
+  <form
+    className="ant-form ant-form-vertical expenses-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <span
+              className="expense-date-picker ant-calendar-picker"
+              id="date"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={Object {}}
+            >
+              <div
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              >
+                <input
+                  className="ant-calendar-picker-input ant-input"
+                  placeholder="Select date"
+                  readOnly={true}
+                  value=""
+                />
+                <i
+                  className="anticon anticon-calendar ant-calendar-picker-icon"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="calendar"
+                    fill="currentColor"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"
+                    />
+                  </svg>
+                </i>
+              </div>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <div
+              className="ant-select ant-select-enabled"
+              id="type"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              onMouseOut={[Function]}
+              onMouseUp={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                aria-autocomplete="list"
+                aria-controls="test-uuid"
+                aria-expanded={false}
+                aria-haspopup="true"
+                className="ant-select-selection
+            ant-select-selection--single"
+                data-__field={
+                  Object {
+                    "name": "type",
+                  }
+                }
+                data-__meta={
+                  Object {
+                    "name": "type",
+                    "originalProps": Object {
+                      "children": Array [
+                        <Option
+                          value="MOTO"
+                        >
+                          Moto
+                        </Option>,
+                        <Option
+                          value="CASA"
+                        >
+                          Casa
+                        </Option>,
+                        <Option
+                          value="VARIE"
+                        >
+                          Varie
+                        </Option>,
+                      ],
+                      "choiceTransitionName": "zoom",
+                      "optionFilterProp": "children",
+                      "placeholder": "Select type",
+                      "prefixCls": "ant-select",
+                      "showSearch": true,
+                      "transitionName": "slide-up",
+                    },
+                    "ref": null,
+                    "rules": Array [
+                      Object {
+                        "message": "Please select a valid product",
+                        "required": true,
+                      },
+                    ],
+                    "trigger": "onChange",
+                    "validate": Array [
+                      Object {
+                        "rules": Array [
+                          Object {
+                            "message": "Please select a valid product",
+                            "required": true,
+                          },
+                        ],
+                        "trigger": Array [
+                          "onChange",
+                        ],
+                      },
+                    ],
+                    "valuePropName": "value",
+                  }
+                }
+                onKeyDown={[Function]}
+                role="combobox"
+                tabIndex={0}
+              >
+                <div
+                  className="ant-select-selection__rendered"
+                >
+                  <div
+                    className="ant-select-selection__placeholder"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    style={
+                      Object {
+                        "WebkitUserSelect": "none",
+                        "display": "block",
+                        "userSelect": "none",
+                      }
+                    }
+                    unselectable="on"
+                  >
+                    Select type
+                  </div>
+                  <div
+                    className="ant-select-search ant-select-search--inline"
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                  >
+                    <div
+                      className="ant-select-search__field__wrap"
+                    >
+                      <input
+                        autoComplete="off"
+                        className="ant-select-search__field"
+                        id="type"
+                        onChange={[Function]}
+                        onKeyDown={[Function]}
+                        value=""
+                      />
+                      <span
+                        className="ant-select-search__field__mirror"
+                      >
+                        
+                         
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <span
+                  className="ant-select-arrow"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "WebkitUserSelect": "none",
+                      "userSelect": "none",
+                    }
+                  }
+                  unselectable="on"
+                >
+                  <i
+                    className="anticon anticon-down ant-select-arrow-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="down"
+                      fill="currentColor"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                      />
+                    </svg>
+                  </i>
+                </span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <input
+              className="ant-input"
+              data-__field={
+                Object {
+                  "name": "amount",
+                }
+              }
+              data-__meta={
+                Object {
+                  "name": "amount",
+                  "originalProps": Object {
+                    "disabled": false,
+                    "placeholder": "Insert amount: €",
+                    "prefixCls": "ant-input",
+                    "type": "number",
+                  },
+                  "ref": null,
+                  "rules": Array [
+                    Object {
+                      "message": "Please insert a valid amount",
+                      "required": true,
+                    },
+                  ],
+                  "trigger": "onChange",
+                  "validate": Array [
+                    Object {
+                      "rules": Array [
+                        Object {
+                          "message": "Please insert a valid amount",
+                          "required": true,
+                        },
+                      ],
+                      "trigger": Array [
+                        "onChange",
+                      ],
+                    },
+                  ],
+                  "valuePropName": "value",
+                }
+              }
+              disabled={false}
+              id="amount"
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Insert amount: €"
+              type="number"
+              value=""
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <textarea
+              className="ant-input"
+              data-__field={
+                Object {
+                  "name": "descritpion",
+                }
+              }
+              data-__meta={
+                Object {
+                  "name": "descritpion",
+                  "originalProps": Object {
+                    "placeholder": "Insert short description",
+                    "prefixCls": "ant-input",
+                  },
+                  "ref": null,
+                  "trigger": "onChange",
+                  "validate": Array [],
+                  "valuePropName": "value",
+                }
+              }
+              id="descritpion"
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Insert short description"
+              style={Object {}}
+              value=""
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <button
+              className="ant-btn ant-btn-primary"
+              onClick={[Function]}
+              type="submit"
+            >
+              <span>
+                Add
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
