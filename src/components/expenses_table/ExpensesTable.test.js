@@ -25,7 +25,7 @@ describe('<ExpensesTable />', () => {
     expect(table).toMatchSnapshot();
   });
 
-  it('should rendere with more items', () => {
+  it('should render with more items', () => {
     const fakeData = [...Array(5).keys()].map(index => ({
       key: index,
       amount: -100,

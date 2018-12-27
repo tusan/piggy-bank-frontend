@@ -1,5 +1,506 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<ExpensesTable /> should render with more items 1`] = `
+<div
+  className="ant-table-wrapper"
+>
+  <div
+    className="ant-spin-nested-loading"
+  >
+    <div
+      className="ant-spin-container"
+    >
+      <div
+        className="ant-table ant-table-small ant-table-fixed-header ant-table-scroll-position-left"
+        style={Object {}}
+      >
+        <div
+          className="ant-table-content"
+        >
+          <div
+            className="ant-table-scroll"
+          >
+            <div
+              className="ant-table-header"
+              onScroll={[Function]}
+              style={Object {}}
+            >
+              <table
+                className=""
+                style={Object {}}
+              >
+                <colgroup>
+                  <col
+                    style={
+                      Object {
+                        "minWidth": 220,
+                        "width": 220,
+                      }
+                    }
+                  />
+                  <col
+                    style={
+                      Object {
+                        "minWidth": 220,
+                        "width": 220,
+                      }
+                    }
+                  />
+                  <col
+                    style={
+                      Object {
+                        "minWidth": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />
+                </colgroup>
+                <thead
+                  className="ant-table-thead"
+                >
+                  <tr
+                    style={
+                      Object {
+                        "height": null,
+                      }
+                    }
+                  >
+                    <th
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="ant-table-column-sorters"
+                        title="Date"
+                      >
+                        Date
+                        <div
+                          className="ant-table-column-sorter"
+                        >
+                          <i
+                            className="anticon anticon-caret-up ant-table-column-sorter-up on"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-up"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                          <i
+                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-down"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="ant-table-column-sorters"
+                        title="Amount"
+                      >
+                        Amount
+                        <div
+                          className="ant-table-column-sorter"
+                        >
+                          <i
+                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-up"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                          <i
+                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-down"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="ant-table-column-sorters"
+                        title="Type"
+                      >
+                        Type
+                        <div
+                          className="ant-table-column-sorter"
+                        >
+                          <i
+                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-up"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                          <i
+                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className=""
+                              data-icon="caret-down"
+                              fill="currentColor"
+                              height="1em"
+                              viewBox="0 0 1024 1024"
+                              width="1em"
+                            >
+                              <path
+                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div
+              className="ant-table-body"
+              onScroll={[Function]}
+              onWheel={[Function]}
+              style={
+                Object {
+                  "maxHeight": 420,
+                  "overflowY": "scroll",
+                }
+              }
+            >
+              <table
+                className=""
+                style={Object {}}
+              >
+                <colgroup>
+                  <col
+                    style={
+                      Object {
+                        "minWidth": 220,
+                        "width": 220,
+                      }
+                    }
+                  />
+                  <col
+                    style={
+                      Object {
+                        "minWidth": 220,
+                        "width": 220,
+                      }
+                    }
+                  />
+                  <col
+                    style={
+                      Object {
+                        "minWidth": undefined,
+                        "width": undefined,
+                      }
+                    }
+                  />
+                </colgroup>
+                <tbody
+                  className="ant-table-tbody"
+                >
+                  <tr
+                    className="ant-table-row ant-table-row-level-0"
+                    data-row-key={0}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onDoubleClick={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "height": null,
+                      }
+                    }
+                  >
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="ant-table-row-indent indent-level-0"
+                        style={
+                          Object {
+                            "paddingLeft": "0px",
+                          }
+                        }
+                      />
+                      <span>
+                        12/26/2018
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      <span>
+                        € 
+                        -100
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      CASA
+                    </td>
+                  </tr>
+                  <tr
+                    className="ant-table-row ant-table-row-level-0"
+                    data-row-key={1}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onDoubleClick={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "height": null,
+                      }
+                    }
+                  >
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="ant-table-row-indent indent-level-0"
+                        style={
+                          Object {
+                            "paddingLeft": "0px",
+                          }
+                        }
+                      />
+                      <span>
+                        12/26/2018
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      <span>
+                        € 
+                        -100
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      CASA
+                    </td>
+                  </tr>
+                  <tr
+                    className="ant-table-row ant-table-row-level-0"
+                    data-row-key={2}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onDoubleClick={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "height": null,
+                      }
+                    }
+                  >
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="ant-table-row-indent indent-level-0"
+                        style={
+                          Object {
+                            "paddingLeft": "0px",
+                          }
+                        }
+                      />
+                      <span>
+                        12/26/2018
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      <span>
+                        € 
+                        -100
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      CASA
+                    </td>
+                  </tr>
+                  <tr
+                    className="ant-table-row ant-table-row-level-0"
+                    data-row-key={3}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onDoubleClick={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "height": null,
+                      }
+                    }
+                  >
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="ant-table-row-indent indent-level-0"
+                        style={
+                          Object {
+                            "paddingLeft": "0px",
+                          }
+                        }
+                      />
+                      <span>
+                        12/26/2018
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      <span>
+                        € 
+                        -100
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      CASA
+                    </td>
+                  </tr>
+                  <tr
+                    className="ant-table-row ant-table-row-level-0"
+                    data-row-key={4}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onDoubleClick={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "height": null,
+                      }
+                    }
+                  >
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="ant-table-row-indent indent-level-0"
+                        style={
+                          Object {
+                            "paddingLeft": "0px",
+                          }
+                        }
+                      />
+                      <span>
+                        12/26/2018
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      <span>
+                        € 
+                        -100
+                      </span>
+                    </td>
+                    <td
+                      className="ant-table-column-has-actions ant-table-column-has-sorters"
+                      onClick={[Function]}
+                    >
+                      CASA
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<ExpensesTable /> should render with no items 1`] = `
 <div
   className="ant-table-wrapper"
@@ -562,7 +1063,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                         }
                       />
                       <span>
-                        2018-12-26
+                        12/27/2018
                       </span>
                     </td>
                     <td
@@ -579,507 +1080,6 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                       onClick={[Function]}
                     >
                       MOTO
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<ExpensesTable /> should rendere with more items 1`] = `
-<div
-  className="ant-table-wrapper"
->
-  <div
-    className="ant-spin-nested-loading"
-  >
-    <div
-      className="ant-spin-container"
-    >
-      <div
-        className="ant-table ant-table-small ant-table-fixed-header ant-table-scroll-position-left"
-        style={Object {}}
-      >
-        <div
-          className="ant-table-content"
-        >
-          <div
-            className="ant-table-scroll"
-          >
-            <div
-              className="ant-table-header"
-              onScroll={[Function]}
-              style={Object {}}
-            >
-              <table
-                className=""
-                style={Object {}}
-              >
-                <colgroup>
-                  <col
-                    style={
-                      Object {
-                        "minWidth": 220,
-                        "width": 220,
-                      }
-                    }
-                  />
-                  <col
-                    style={
-                      Object {
-                        "minWidth": 220,
-                        "width": 220,
-                      }
-                    }
-                  />
-                  <col
-                    style={
-                      Object {
-                        "minWidth": undefined,
-                        "width": undefined,
-                      }
-                    }
-                  />
-                </colgroup>
-                <thead
-                  className="ant-table-thead"
-                >
-                  <tr
-                    style={
-                      Object {
-                        "height": null,
-                      }
-                    }
-                  >
-                    <th
-                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
-                      onClick={[Function]}
-                    >
-                      <div
-                        className="ant-table-column-sorters"
-                        title="Date"
-                      >
-                        Date
-                        <div
-                          className="ant-table-column-sorter"
-                        >
-                          <i
-                            className="anticon anticon-caret-up ant-table-column-sorter-up on"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              className=""
-                              data-icon="caret-up"
-                              fill="currentColor"
-                              height="1em"
-                              viewBox="0 0 1024 1024"
-                              width="1em"
-                            >
-                              <path
-                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
-                              />
-                            </svg>
-                          </i>
-                          <i
-                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              className=""
-                              data-icon="caret-down"
-                              fill="currentColor"
-                              height="1em"
-                              viewBox="0 0 1024 1024"
-                              width="1em"
-                            >
-                              <path
-                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
-                              />
-                            </svg>
-                          </i>
-                        </div>
-                      </div>
-                    </th>
-                    <th
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      <div
-                        className="ant-table-column-sorters"
-                        title="Amount"
-                      >
-                        Amount
-                        <div
-                          className="ant-table-column-sorter"
-                        >
-                          <i
-                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              className=""
-                              data-icon="caret-up"
-                              fill="currentColor"
-                              height="1em"
-                              viewBox="0 0 1024 1024"
-                              width="1em"
-                            >
-                              <path
-                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
-                              />
-                            </svg>
-                          </i>
-                          <i
-                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              className=""
-                              data-icon="caret-down"
-                              fill="currentColor"
-                              height="1em"
-                              viewBox="0 0 1024 1024"
-                              width="1em"
-                            >
-                              <path
-                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
-                              />
-                            </svg>
-                          </i>
-                        </div>
-                      </div>
-                    </th>
-                    <th
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      <div
-                        className="ant-table-column-sorters"
-                        title="Type"
-                      >
-                        Type
-                        <div
-                          className="ant-table-column-sorter"
-                        >
-                          <i
-                            className="anticon anticon-caret-up ant-table-column-sorter-up off"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              className=""
-                              data-icon="caret-up"
-                              fill="currentColor"
-                              height="1em"
-                              viewBox="0 0 1024 1024"
-                              width="1em"
-                            >
-                              <path
-                                d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
-                              />
-                            </svg>
-                          </i>
-                          <i
-                            className="anticon anticon-caret-down ant-table-column-sorter-down off"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              className=""
-                              data-icon="caret-down"
-                              fill="currentColor"
-                              height="1em"
-                              viewBox="0 0 1024 1024"
-                              width="1em"
-                            >
-                              <path
-                                d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
-                              />
-                            </svg>
-                          </i>
-                        </div>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-              </table>
-            </div>
-            <div
-              className="ant-table-body"
-              onScroll={[Function]}
-              onWheel={[Function]}
-              style={
-                Object {
-                  "maxHeight": 420,
-                  "overflowY": "scroll",
-                }
-              }
-            >
-              <table
-                className=""
-                style={Object {}}
-              >
-                <colgroup>
-                  <col
-                    style={
-                      Object {
-                        "minWidth": 220,
-                        "width": 220,
-                      }
-                    }
-                  />
-                  <col
-                    style={
-                      Object {
-                        "minWidth": 220,
-                        "width": 220,
-                      }
-                    }
-                  />
-                  <col
-                    style={
-                      Object {
-                        "minWidth": undefined,
-                        "width": undefined,
-                      }
-                    }
-                  />
-                </colgroup>
-                <tbody
-                  className="ant-table-tbody"
-                >
-                  <tr
-                    className="ant-table-row ant-table-row-level-0"
-                    data-row-key={0}
-                    onClick={[Function]}
-                    onContextMenu={[Function]}
-                    onDoubleClick={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    style={
-                      Object {
-                        "height": null,
-                      }
-                    }
-                  >
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
-                      onClick={[Function]}
-                    >
-                      <span
-                        className="ant-table-row-indent indent-level-0"
-                        style={
-                          Object {
-                            "paddingLeft": "0px",
-                          }
-                        }
-                      />
-                      <span>
-                        2018-12-26
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      <span>
-                        € 
-                        -100
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      CASA
-                    </td>
-                  </tr>
-                  <tr
-                    className="ant-table-row ant-table-row-level-0"
-                    data-row-key={1}
-                    onClick={[Function]}
-                    onContextMenu={[Function]}
-                    onDoubleClick={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    style={
-                      Object {
-                        "height": null,
-                      }
-                    }
-                  >
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
-                      onClick={[Function]}
-                    >
-                      <span
-                        className="ant-table-row-indent indent-level-0"
-                        style={
-                          Object {
-                            "paddingLeft": "0px",
-                          }
-                        }
-                      />
-                      <span>
-                        2018-12-26
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      <span>
-                        € 
-                        -100
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      CASA
-                    </td>
-                  </tr>
-                  <tr
-                    className="ant-table-row ant-table-row-level-0"
-                    data-row-key={2}
-                    onClick={[Function]}
-                    onContextMenu={[Function]}
-                    onDoubleClick={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    style={
-                      Object {
-                        "height": null,
-                      }
-                    }
-                  >
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
-                      onClick={[Function]}
-                    >
-                      <span
-                        className="ant-table-row-indent indent-level-0"
-                        style={
-                          Object {
-                            "paddingLeft": "0px",
-                          }
-                        }
-                      />
-                      <span>
-                        2018-12-26
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      <span>
-                        € 
-                        -100
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      CASA
-                    </td>
-                  </tr>
-                  <tr
-                    className="ant-table-row ant-table-row-level-0"
-                    data-row-key={3}
-                    onClick={[Function]}
-                    onContextMenu={[Function]}
-                    onDoubleClick={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    style={
-                      Object {
-                        "height": null,
-                      }
-                    }
-                  >
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
-                      onClick={[Function]}
-                    >
-                      <span
-                        className="ant-table-row-indent indent-level-0"
-                        style={
-                          Object {
-                            "paddingLeft": "0px",
-                          }
-                        }
-                      />
-                      <span>
-                        2018-12-26
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      <span>
-                        € 
-                        -100
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      CASA
-                    </td>
-                  </tr>
-                  <tr
-                    className="ant-table-row ant-table-row-level-0"
-                    data-row-key={4}
-                    onClick={[Function]}
-                    onContextMenu={[Function]}
-                    onDoubleClick={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    style={
-                      Object {
-                        "height": null,
-                      }
-                    }
-                  >
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
-                      onClick={[Function]}
-                    >
-                      <span
-                        className="ant-table-row-indent indent-level-0"
-                        style={
-                          Object {
-                            "paddingLeft": "0px",
-                          }
-                        }
-                      />
-                      <span>
-                        2018-12-26
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      <span>
-                        € 
-                        -100
-                      </span>
-                    </td>
-                    <td
-                      className="ant-table-column-has-actions ant-table-column-has-sorters"
-                      onClick={[Function]}
-                    >
-                      CASA
                     </td>
                   </tr>
                 </tbody>

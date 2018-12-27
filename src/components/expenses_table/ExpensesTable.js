@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table } from 'antd';
+import moment from 'moment';
 import './ExpensesTable.css';
 
 const baseSorter = (a, b) => (a > b ? 1 : -1);
@@ -11,7 +12,7 @@ const columns = [
     defaultSortOrder: 'ascend',
     sorter: baseSorter,
     width: 220,
-    render: row => <span>{Intl.DateTimeFormat().format(row)}</span>
+    render: row => <span>{moment(row).format('L')}</span>
   },
   {
     title: 'Amount',
