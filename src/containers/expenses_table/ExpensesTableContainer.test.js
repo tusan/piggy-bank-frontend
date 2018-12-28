@@ -22,10 +22,11 @@ describe('Expense table logic', () => {
     ];
     const wrapper = shallow(<ExpensesTableContainer data={fakeData} />);
 
-    const innerTable = wrapper.find(ExpensesTable);
+    const innerTable = wrapper.find(ExpensesTable).first();
 
     expect(innerTable.prop('data')).toEqual(fakeData);
     expect(innerTable.prop('handleRowClick')).toBeDefined();
+    expect(innerTable.prop('columns')).toBeDefined();
   });
 
   it('should create ExpenseTableFilter component and load data', () => {

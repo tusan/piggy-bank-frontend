@@ -5,9 +5,43 @@ import moment from 'moment';
 import { configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
+const formatAmount = new Intl.NumberFormat('it-IT', {
+  style: 'currency',
+  currency: 'EUR',
+  minimumFractionDigits: 2
+}).format
+
+const baseSorter = (a, b) => (a > b ? 1 : -1);
+
+const columns = [{
+  title: 'Date',
+  dataIndex: 'date',
+  defaultSortOrder: 'ascend',
+  sorter: baseSorter,
+  width: 220,
+  render: row => <span>{moment(row).format('DD/MM/YYYY')}</span>
+},
+{
+  title: 'Amount',
+  dataIndex: 'amount',
+  width: 220,
+  render: row => <span>{formatAmount(row)}</span>,
+  sorter: baseSorter
+},
+{
+  title: 'Type',
+  dataIndex: 'type',
+  width: 200,
+  sorter: baseSorter
+}]
+
 describe('<ExpensesTable />', () => {
   it('should render with no items', () => {
-    const table = renderer.create(<ExpensesTable data={[]} />).toJSON();
+    const table = renderer.create(<ExpensesTable
+      data={[]}
+      formatAmount={formatAmount}
+      columns={columns}
+    />).toJSON();
     expect(table).toMatchSnapshot();
   });
 
@@ -22,7 +56,11 @@ describe('<ExpensesTable />', () => {
       }
     ];
 
-    const table = renderer.create(<ExpensesTable data={fakeData} />).toJSON();
+    const table = renderer.create(<ExpensesTable
+      data={fakeData}
+      formatAmount={formatAmount}
+      columns={columns}
+    />).toJSON();
     expect(table).toMatchSnapshot();
   });
 
@@ -35,7 +73,11 @@ describe('<ExpensesTable />', () => {
       date: moment('20181227')
     }));
 
-    const table = renderer.create(<ExpensesTable data={fakeData} />).toJSON();
+    const table = renderer.create(<ExpensesTable
+      data={fakeData}
+      formatAmount={formatAmount}
+      columns={columns}
+    />).toJSON();
 
     expect(table).toMatchSnapshot();
   });
@@ -57,7 +99,12 @@ describe('event listeners', () => {
       }
     ];
     const wrapper = mount(
-      <ExpensesTable data={fakeData} handleRowClick={handleRowClick} />
+      <ExpensesTable
+        data={fakeData}
+        handleRowClick={handleRowClick}
+        formatAmount={formatAmount}
+        columns={columns}
+      />
     );
     wrapper.find('tr.ant-table-row').simulate('click');
 

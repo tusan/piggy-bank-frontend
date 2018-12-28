@@ -49,8 +49,8 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 200,
+                        "width": 200,
                       }
                     }
                   />
@@ -251,8 +251,8 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 200,
+                        "width": 200,
                       }
                     }
                   />
@@ -287,7 +287,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                         }
                       />
                       <span>
-                        12/27/2018
+                        27/12/2018
                       </span>
                     </td>
                     <td
@@ -295,8 +295,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        € 
-                        -100
+                        -€ 100.00
                       </span>
                     </td>
                     <td
@@ -333,7 +332,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                         }
                       />
                       <span>
-                        12/27/2018
+                        27/12/2018
                       </span>
                     </td>
                     <td
@@ -341,8 +340,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        € 
-                        -100
+                        -€ 100.00
                       </span>
                     </td>
                     <td
@@ -379,7 +377,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                         }
                       />
                       <span>
-                        12/27/2018
+                        27/12/2018
                       </span>
                     </td>
                     <td
@@ -387,8 +385,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        € 
-                        -100
+                        -€ 100.00
                       </span>
                     </td>
                     <td
@@ -425,7 +422,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                         }
                       />
                       <span>
-                        12/27/2018
+                        27/12/2018
                       </span>
                     </td>
                     <td
@@ -433,8 +430,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        € 
-                        -100
+                        -€ 100.00
                       </span>
                     </td>
                     <td
@@ -471,7 +467,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                         }
                       />
                       <span>
-                        12/27/2018
+                        27/12/2018
                       </span>
                     </td>
                     <td
@@ -479,8 +475,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        € 
-                        -100
+                        -€ 100.00
                       </span>
                     </td>
                     <td
@@ -550,8 +545,8 @@ exports[`<ExpensesTable /> should render with no items 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 200,
+                        "width": 200,
                       }
                     }
                   />
@@ -752,8 +747,8 @@ exports[`<ExpensesTable /> should render with no items 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 200,
+                        "width": 200,
                       }
                     }
                   />
@@ -825,8 +820,8 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 200,
+                        "width": 200,
                       }
                     }
                   />
@@ -1027,8 +1022,8 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                   <col
                     style={
                       Object {
-                        "minWidth": undefined,
-                        "width": undefined,
+                        "minWidth": 200,
+                        "width": 200,
                       }
                     }
                   />
@@ -1063,7 +1058,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                         }
                       />
                       <span>
-                        12/27/2018
+                        27/12/2018
                       </span>
                     </td>
                     <td
@@ -1071,8 +1066,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        € 
-                        -100
+                        -€ 100.00
                       </span>
                     </td>
                     <td

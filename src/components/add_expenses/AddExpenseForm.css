@@ -10,11 +10,7 @@
   margin-bottom: 10px;
 }
 
-.ant-calendar-picker {
-  width: 100%;
-}
-
-.add-expense-form .ant-btn-primary {
+.ant-calendar-picker, .add-expense-form .ant-btn-primary, .ant-input-number {
   width: 100%;
 }
 

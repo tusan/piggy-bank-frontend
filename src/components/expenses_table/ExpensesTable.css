@@ -9,3 +9,8 @@
     min-height: 420px;
   }
 }
+
+.ant-table-body, .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+  overflow-y: auto;
+  min-height: 48px;
+}

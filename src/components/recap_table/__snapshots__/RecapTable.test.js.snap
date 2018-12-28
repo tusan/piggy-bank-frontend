@@ -63,10 +63,52 @@ exports[`<RecapTable /> should display a RecapTable with a single element 1`] = 
                     </div>
                   </th>
                   <th
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                    onClick={[Function]}
                   >
-                    <div>
+                    <div
+                      className="ant-table-column-sorters"
+                      title="Amount"
+                    >
                       Amount
+                      <div
+                        className="ant-table-column-sorter"
+                      >
+                        <i
+                          className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className=""
+                            data-icon="caret-up"
+                            fill="currentColor"
+                            height="1em"
+                            viewBox="0 0 1024 1024"
+                            width="1em"
+                          >
+                            <path
+                              d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                            />
+                          </svg>
+                        </i>
+                        <i
+                          className="anticon anticon-caret-down ant-table-column-sorter-down on"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className=""
+                            data-icon="caret-down"
+                            fill="currentColor"
+                            height="1em"
+                            viewBox="0 0 1024 1024"
+                            width="1em"
+                          >
+                            <path
+                              d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                            />
+                          </svg>
+                        </i>
+                      </div>
                     </div>
                   </th>
                 </tr>
@@ -103,12 +145,11 @@ exports[`<RecapTable /> should display a RecapTable with a single element 1`] = 
                     MOTO
                   </td>
                   <td
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                     onClick={[Function]}
                   >
                     <span>
-                      € 
-                      -100
+                      -€ 100.00
                     </span>
                   </td>
                 </tr>
@@ -129,13 +170,12 @@ exports[`<RecapTable /> should display a RecapTable with a single element 1`] = 
                 </b>
               </div>
               <div
-                className="ant-col-offset-10"
+                className="ant-col-offset-8"
               >
                 <span
                   className="totalAmount"
                 >
-                  € 
-                  -100.00
+                  -€ 100.00
                 </span>
               </div>
             </div>
@@ -210,10 +250,52 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     </div>
                   </th>
                   <th
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                    onClick={[Function]}
                   >
-                    <div>
+                    <div
+                      className="ant-table-column-sorters"
+                      title="Amount"
+                    >
                       Amount
+                      <div
+                        className="ant-table-column-sorter"
+                      >
+                        <i
+                          className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className=""
+                            data-icon="caret-up"
+                            fill="currentColor"
+                            height="1em"
+                            viewBox="0 0 1024 1024"
+                            width="1em"
+                          >
+                            <path
+                              d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                            />
+                          </svg>
+                        </i>
+                        <i
+                          className="anticon anticon-caret-down ant-table-column-sorter-down on"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className=""
+                            data-icon="caret-down"
+                            fill="currentColor"
+                            height="1em"
+                            viewBox="0 0 1024 1024"
+                            width="1em"
+                          >
+                            <path
+                              d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                            />
+                          </svg>
+                        </i>
+                      </div>
                     </div>
                   </th>
                 </tr>
@@ -250,12 +332,11 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     MOTO
                   </td>
                   <td
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                     onClick={[Function]}
                   >
                     <span>
-                      € 
-                      -100
+                      -€ 100.00
                     </span>
                   </td>
                 </tr>
@@ -288,12 +369,11 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     MOTO
                   </td>
                   <td
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                     onClick={[Function]}
                   >
                     <span>
-                      € 
-                      -100
+                      -€ 100.00
                     </span>
                   </td>
                 </tr>
@@ -326,12 +406,11 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     MOTO
                   </td>
                   <td
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                     onClick={[Function]}
                   >
                     <span>
-                      € 
-                      -100
+                      -€ 100.00
                     </span>
                   </td>
                 </tr>
@@ -364,12 +443,11 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     MOTO
                   </td>
                   <td
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                     onClick={[Function]}
                   >
                     <span>
-                      € 
-                      -100
+                      -€ 100.00
                     </span>
                   </td>
                 </tr>
@@ -402,12 +480,11 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     MOTO
                   </td>
                   <td
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
                     onClick={[Function]}
                   >
                     <span>
-                      € 
-                      -100
+                      -€ 100.00
                     </span>
                   </td>
                 </tr>
@@ -428,13 +505,12 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                 </b>
               </div>
               <div
-                className="ant-col-offset-10"
+                className="ant-col-offset-8"
               >
                 <span
                   className="totalAmount"
                 >
-                  € 
-                  -100.00
+                  -€ 100.00
                 </span>
               </div>
             </div>
@@ -509,10 +585,52 @@ exports[`<RecapTable /> should display a RecapTable without elements 1`] = `
                     </div>
                   </th>
                   <th
-                    className=""
+                    className="ant-table-column-has-actions ant-table-column-has-sorters ant-table-column-sort"
+                    onClick={[Function]}
                   >
-                    <div>
+                    <div
+                      className="ant-table-column-sorters"
+                      title="Amount"
+                    >
                       Amount
+                      <div
+                        className="ant-table-column-sorter"
+                      >
+                        <i
+                          className="anticon anticon-caret-up ant-table-column-sorter-up off"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className=""
+                            data-icon="caret-up"
+                            fill="currentColor"
+                            height="1em"
+                            viewBox="0 0 1024 1024"
+                            width="1em"
+                          >
+                            <path
+                              d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"
+                            />
+                          </svg>
+                        </i>
+                        <i
+                          className="anticon anticon-caret-down ant-table-column-sorter-down on"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className=""
+                            data-icon="caret-down"
+                            fill="currentColor"
+                            height="1em"
+                            viewBox="0 0 1024 1024"
+                            width="1em"
+                          >
+                            <path
+                              d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"
+                            />
+                          </svg>
+                        </i>
+                      </div>
                     </div>
                   </th>
                 </tr>
@@ -541,13 +659,12 @@ exports[`<RecapTable /> should display a RecapTable without elements 1`] = `
                 </b>
               </div>
               <div
-                className="ant-col-offset-10"
+                className="ant-col-offset-8"
               >
                 <span
                   className="totalAmount"
                 >
-                  € 
-                  0.00
+                  € 0.00
                 </span>
               </div>
             </div>

@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import { Form, DatePicker, Input, Button, Select } from 'antd';
 import './AddExpenseForm.css';
+import { InputNumber } from 'antd';
+
 const { Item } = Form;
 const { Option } = Select;
 const { TextArea } = Input;
@@ -69,10 +71,10 @@ class AddExpenseForm extends PureComponent {
                   message: 'Please insert a valid amount'
                 }
               ]
-            })(<Input placeholder={'Insert amount: €'} type={'number'} />)}
+            })(<InputNumber placeholder={'Insert amount: €'} />)}
           </Item>
           <Item>
-            {getFieldDecorator('descritpion', {})(
+            {getFieldDecorator('description', {})(
               <TextArea placeholder={'Insert short description'} />
             )}
           </Item>

@@ -3,8 +3,14 @@ import renderer from 'react-test-renderer';
 import RecapTable from './RecapTable';
 
 describe('<RecapTable />', () => {
+  const formatAmount = new Intl.NumberFormat('it-IT', {
+    style: 'currency',
+    currency: 'EUR',
+    minimumFractionDigits: 2
+  }).format
+
   it('should display a RecapTable without elements', () => {
-    const table = renderer.create(<RecapTable data={[]} totalAmount={0} />);
+    const table = renderer.create(<RecapTable data={[]} totalAmount={0} formatAmount={formatAmount} />);
 
     expect(table).toMatchSnapshot();
   });
@@ -18,7 +24,7 @@ describe('<RecapTable />', () => {
       }
     ];
     const table = renderer.create(
-      <RecapTable data={fakeData} totalAmount={-100} />
+      <RecapTable data={fakeData} totalAmount={-100} formatAmount={formatAmount} />
     );
 
     expect(table).toMatchSnapshot();
@@ -31,7 +37,7 @@ describe('<RecapTable />', () => {
       type: 'MOTO'
     }));
     const table = renderer.create(
-      <RecapTable data={fakeData} totalAmount={-100} />
+      <RecapTable data={fakeData} totalAmount={-100} formatAmount={formatAmount} />
     );
 
     expect(table).toMatchSnapshot();

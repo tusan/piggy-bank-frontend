@@ -54,7 +54,7 @@ describe('expense actions', () => {
       type: 'MOTO',
       description: 'test description'
     }
-    
+
     axiosMock
       .onPost('http://localhost:8080/api/v1/expenses', {
         date: '20181225',
