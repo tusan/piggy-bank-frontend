@@ -17,7 +17,8 @@ describe('<ExpensesTable />', () => {
         key: 0,
         amount: -100,
         type: 'MOTO',
-        description: 'a description'
+        description: 'a description',
+        date: moment('20181227')
       }
     ];
 
@@ -31,7 +32,7 @@ describe('<ExpensesTable />', () => {
       amount: -100,
       type: 'CASA',
       description: 'a description',
-      date: moment('20181226')
+      date: moment('20181227')
     }));
 
     const table = renderer.create(<ExpensesTable data={fakeData} />).toJSON();
@@ -51,7 +52,8 @@ describe('event listeners', () => {
         key: 0,
         amount: -100,
         type: 'MOTO',
-        description: 'a description'
+        description: 'a description',
+        date: moment('20181227')
       }
     ];
     const wrapper = mount(

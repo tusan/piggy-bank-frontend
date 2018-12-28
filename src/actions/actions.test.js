@@ -49,14 +49,19 @@ describe('expense actions', () => {
     const axiosMock = new MockAdapter(axios);
     const store = mockStore([]);
     const expense = {
-      date: '20181126',
+      date: moment("20181225"),
       amount: 10,
       type: 'MOTO',
       description: 'test description'
-    };
-
+    }
+    
     axiosMock
-      .onPost('http://localhost:8080/api/v1/expenses', expense)
+      .onPost('http://localhost:8080/api/v1/expenses', {
+        date: '20181225',
+        amount: 10,
+        type: 'MOTO',
+        description: 'test description'
+      })
       .reply(201, {});
 
     const expected = [
@@ -68,12 +73,7 @@ describe('expense actions', () => {
 
     return store
       .dispatch(
-        actions.addExpense({
-          date: '20181126',
-          amount: 10,
-          type: 'MOTO',
-          description: 'test description'
-        })
+        actions.addExpense(expense)
       )
       .then(() => {
         expect(store.getActions()).toEqual(expected);

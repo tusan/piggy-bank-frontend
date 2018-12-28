@@ -12,7 +12,8 @@ export const addExpense = expense => dispatch =>
     .post(
       `${urls.PROTOCOL}://${urls.EXPENSES_BASE_URL}/${urls.EXPENSES_PATH}`,
       {
-        ...expense
+        ...expense,
+        date: expense.date.format("YYYYMMDD")
       }
     )
     .then(() => dispatch(expenseAdded(expense)))

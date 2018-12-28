@@ -40,10 +40,15 @@ export const buildRecapFromData = data => {
   };
 };
 
-const mapStateToProps = state => buildRecapFromData(state.expenses);
+const mapStateToProps = state => {
+  console.log(buildRecapFromData(state.expenses))
+  return buildRecapFromData(state.expenses);
+}
 
-export const RecapTableContainer = props => (
-  <RecapTable data={props.data} totalAmount={props.totalAmount} />
-);
+export class RecapTableContainer extends React.PureComponent {
+ render = () => {
+   return <RecapTable data={this.props.data} totalAmount={this.props.totalAmount} />
+  }
+}
 
 export default connect(mapStateToProps)(RecapTableContainer);
