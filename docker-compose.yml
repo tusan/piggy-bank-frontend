@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: "piggy-bank-frontend"
+    ports:
+     - "80:80"
+  piggy-bank:
+    image: "piggy-bank"
+    volumes:
+      - D:\docker-data\piggy-bank:/data
+    ports: 
+      - 8082:8080
