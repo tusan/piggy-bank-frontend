@@ -1,12 +1,12 @@
 version: '3'
 services:
-  web:
-    image: "piggy-bank-frontend"
+  frontend:
+    image: "tusan/piggy-bank-frontend:1.0"
     ports:
      - "80:80"
-  piggy-bank:
-    image: "piggy-bank"
+  backend:
+    image: "tusan/piggy-bank:1.0"
     volumes:
-      - D:\docker-data\piggy-bank:/data
+      - ~/piggy-bank-data:/data
     ports: 
-      - 8082:8080
+      - 8080:8080
