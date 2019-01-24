@@ -295,7 +295,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        -€ 100.00
+                        -€100.00
                       </span>
                     </td>
                     <td
@@ -340,7 +340,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        -€ 100.00
+                        -€100.00
                       </span>
                     </td>
                     <td
@@ -385,7 +385,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        -€ 100.00
+                        -€100.00
                       </span>
                     </td>
                     <td
@@ -430,7 +430,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        -€ 100.00
+                        -€100.00
                       </span>
                     </td>
                     <td
@@ -475,7 +475,7 @@ exports[`<ExpensesTable /> should render with more items 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        -€ 100.00
+                        -€100.00
                       </span>
                     </td>
                     <td
@@ -1066,7 +1066,7 @@ exports[`<ExpensesTable /> should render with one item 1`] = `
                       onClick={[Function]}
                     >
                       <span>
-                        -€ 100.00
+                        -€100.00
                       </span>
                     </td>
                     <td

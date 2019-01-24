@@ -82,7 +82,7 @@ exports[`<ExpenseDetails /> should display an ExpenseDetails table 1`] = `
                     className=""
                     onClick={[Function]}
                   >
-                    2018-12-26
+                    12/26/2018
                   </td>
                 </tr>
                 <tr

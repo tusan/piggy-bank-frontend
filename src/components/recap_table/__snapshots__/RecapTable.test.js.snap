@@ -149,7 +149,7 @@ exports[`<RecapTable /> should display a RecapTable with a single element 1`] = 
                     onClick={[Function]}
                   >
                     <span>
-                      -€ 100.00
+                      -€100.00
                     </span>
                   </td>
                 </tr>
@@ -175,7 +175,7 @@ exports[`<RecapTable /> should display a RecapTable with a single element 1`] = 
                 <span
                   className="totalAmount"
                 >
-                  -€ 100.00
+                  -€100.00
                 </span>
               </div>
             </div>
@@ -336,7 +336,7 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     onClick={[Function]}
                   >
                     <span>
-                      -€ 100.00
+                      -€100.00
                     </span>
                   </td>
                 </tr>
@@ -373,7 +373,7 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     onClick={[Function]}
                   >
                     <span>
-                      -€ 100.00
+                      -€100.00
                     </span>
                   </td>
                 </tr>
@@ -410,7 +410,7 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     onClick={[Function]}
                   >
                     <span>
-                      -€ 100.00
+                      -€100.00
                     </span>
                   </td>
                 </tr>
@@ -447,7 +447,7 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     onClick={[Function]}
                   >
                     <span>
-                      -€ 100.00
+                      -€100.00
                     </span>
                   </td>
                 </tr>
@@ -484,7 +484,7 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                     onClick={[Function]}
                   >
                     <span>
-                      -€ 100.00
+                      -€100.00
                     </span>
                   </td>
                 </tr>
@@ -510,7 +510,7 @@ exports[`<RecapTable /> should display a RecapTable with more elements 1`] = `
                 <span
                   className="totalAmount"
                 >
-                  -€ 100.00
+                  -€100.00
                 </span>
               </div>
             </div>
@@ -664,7 +664,7 @@ exports[`<RecapTable /> should display a RecapTable without elements 1`] = `
                 <span
                   className="totalAmount"
                 >
-                  € 0.00
+                  €0.00
                 </span>
               </div>
             </div>
