@@ -3,17 +3,16 @@ This is my first project entirely in frontend , so feel free to suggest me furth
 
 ## Run the application with docker
 
-Ensure docker and docker-compose installed on your system.
-Add the following line to your /etc/host:
- - [your ip address]       piggy.bank.it api.piggy.bank.it
+Ensure that docker and docker-compose are properly installed on your system.
 
-From the project root run: docker-compose up
+Add the following line to your /etc/host:
+* `[your ip address]       piggy.bank.it api.piggy.bank.it`
+
+From the project root run: `docker-compose up`
 
 ## Using React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
