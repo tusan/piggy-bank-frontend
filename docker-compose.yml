@@ -5,8 +5,15 @@ services:
     ports:
      - "80:80"
   backend:
-    image: "tusan/piggy-bank:1.0"
+    image: "tusan/piggy-bank:2.0"
     volumes:
       - ~/piggy-bank-data:/data
     ports: 
       - 8080:8080
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+    ports:
+    - 5432:5432
