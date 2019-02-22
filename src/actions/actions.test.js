@@ -99,9 +99,9 @@ describe('users actions', () => {
       password: "password"
     }
 
-    const session = { 
-      username: "test_user", 
-      token: "token" 
+    const session = {
+      username: "test_user",
+      token: "token"
     }
 
     axiosMock
@@ -135,9 +135,9 @@ describe('users actions', () => {
       password: "password"
     }
 
-    const session = { 
-      username: "test_user", 
-      token: "token" 
+    const session = {
+      username: "test_user",
+      token: "token"
     }
 
     axiosMock
@@ -149,7 +149,8 @@ describe('users actions', () => {
 
     const expected = [
       {
-        type: 'LOGIN_FAILED'      }
+        type: 'LOGIN_FAILED'
+      }
     ];
 
     return store
