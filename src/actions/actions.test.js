@@ -80,3 +80,84 @@ describe('expense actions', () => {
       });
   });
 });
+
+describe('users actions', () => {
+  it('should create loginSuccesedAction action', () => {
+    const expected = {
+      type: 'LOGIN_SUCCEDED',
+      session: { username: "test user", token: "token" }
+    };
+
+    expect(actions.sessionCreated({ username: "test user", token: "token" })).toEqual(expected);
+  });
+
+  it('should call login and dispatch login action', () => {
+    const axiosMock = new MockAdapter(axios);
+    const store = mockStore([]);
+    const loginData = {
+      username: "test_user",
+      password: "password"
+    }
+
+    const session = { 
+      username: "test_user", 
+      token: "token" 
+    }
+
+    axiosMock
+      .onPost('http://localhost:8080/api/v1/users/login', {
+        username: "test_user",
+        password: "password"
+      })
+      .reply(200, session)
+
+    const expected = [
+      {
+        type: 'LOGIN_SUCCEDED',
+        session
+      }
+    ];
+
+    return store
+      .dispatch(
+        actions.login(loginData)
+      )
+      .then(() => {
+        expect(store.getActions()).toEqual(expected);
+      });
+  });
+
+  it('should handle login fail', () => {
+    const axiosMock = new MockAdapter(axios);
+    const store = mockStore([]);
+    const loginData = {
+      username: "test_user",
+      password: "password"
+    }
+
+    const session = { 
+      username: "test_user", 
+      token: "token" 
+    }
+
+    axiosMock
+      .onPost('http://localhost:8080/api/v1/users/login', {
+        username: "test_user",
+        password: "wrong_password"
+      })
+      .reply(401)
+
+    const expected = [
+      {
+        type: 'LOGIN_FAILED'      }
+    ];
+
+    return store
+      .dispatch(
+        actions.login(loginData)
+      )
+      .then(() => {
+        expect(store.getActions()).toEqual(expected);
+      });
+  });
+});
