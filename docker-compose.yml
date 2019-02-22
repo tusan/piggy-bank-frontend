@@ -1,19 +1,24 @@
 version: '3'
 services:
-  frontend:
-    image: "tusan/piggy-bank-frontend:1.0"
-    ports:
-     - "80:80"
   backend:
-    image: "tusan/piggy-bank:2.0"
-    volumes:
-      - ~/piggy-bank-data:/data
+    image: "tusan/piggy-bank-backend:1.2"
     ports: 
       - 8080:8080
+    depends_on:
+      - "db"
+    environment:
+      - SPRING_PROFILES_ACTIVE=production
   db:
     image: postgres
     restart: always
     environment:
       POSTGRES_PASSWORD: password
+      POSTGRES_DB: piggy_bank
     ports:
     - 5432:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8088:8080
