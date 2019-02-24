@@ -2,10 +2,6 @@ import axios from 'axios';
 import * as urls from '../config/url';
 
 export class ExpenseService {
-    constructor() {
-        console.log("ExpenseService: new instance created");
-    }
-    
     async loadExpenses(dateStart, dateEnd) {
         try {
             const res = await axios
@@ -37,3 +33,6 @@ export class ExpenseService {
 }
 
 export class ExpenseServiceException extends Error { }
+
+const expenseService = new ExpenseService();
+export default expenseService;

@@ -1,19 +1,17 @@
 import { message } from 'antd';
-import { ExpenseService } from '../services/expenseService'
+import expenseService from '../services/expenseService'
 
 export const actionTypes = {
   EXPENSE_ADDED: 'EXPENSE_ADDED',
   EXPENSE_LOAD_SUCCESS: 'EXPENSE_LOAD_SUCCESS',
 };
 
-const expenseService = new ExpenseService();
-
 export const addExpense = expense => async dispatch => {
   try {
     await expenseService.addExpense(expense);
     return dispatch(expenseAdded(expense));
   } catch (error) {
-    message.error(error)
+    message.error(JSON.stringify(error));
   };
 }
 
@@ -32,6 +30,6 @@ export const loadExpenses = (dateStart, dateEnd) => async dispatch => {
     const result = await expenseService.loadExpenses(dateStart, dateEnd);
     return dispatch(expenseLoadSuccess(result))
   } catch (error) {
-    message.error(error)
+    message.error(JSON.stringify(error));
   }
 }
