@@ -39,3 +39,6 @@ export class SessionStorage {
 }
 
 export class BadCredentialException extends Error { }
+
+const userService = new UserService(new UserClient(), new SessionStorage());
+export default userService;
